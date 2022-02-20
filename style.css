@@ -1,0 +1,1411 @@
+﻿/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background: #2c3674 url(../images/empires-puzzles-background.jpg) no-repeat;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+    max-width: 50em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.masthead-brand {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    margin-top: 5px;
+    color: #ffc107;
+}
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+    .nav-masthead .nav-link:hover,
+    .nav-masthead .nav-link:focus {
+        border-bottom-color: rgba(255, 255, 255, .25);
+    }
+
+    .nav-masthead .nav-link + .nav-link {
+        margin-left: 1rem;
+    }
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+    .masthead-brand {
+        float: left;
+    }
+
+    .nav-masthead {
+        float: right;
+    }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+    /*padding: 0 1.5rem;*/
+}
+
+    .cover .btn-lg {
+        padding: .75rem 1.25rem;
+        font-weight: 700;
+    }
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+    color: rgba(255, 255, 255, .5);
+}
+
+
+
+.g-card {
+    border: none !important;
+    margin-bottom: 10px !important;
+}
+
+    .g-card .card-header {
+        color: #FFF;
+        background: #211742;
+    }
+
+    .g-card .card-body {
+        background: #403474;
+        padding-top: 10px;
+    }
+
+.card-preview .card-body {
+    background: rgb(34,72,109) !important;
+    background: linear-gradient(90deg, rgba(34,72,109,1) 0%, rgba(51,99,141,1) 50%, rgba(34,72,109,1) 100%) !important;
+    min-height: 150px;
+}
+
+
+/*.ep-preview {
+    display: flex;
+}*/
+
+.epinput {
+    min-height: 10rem;
+}
+
+.emotion-wrapper {
+    width: 100%;
+    float: left;
+    display: inline-flex;
+}
+
+.emotion-label {
+    float: left;
+    min-width: 70px;
+}
+
+.emotion-list {
+    float: left;
+    min-width: 200px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    .emotion-list li {
+        width: 25px;
+        height: 25px;
+        float: left;
+        margin: 0px 4px 10px 0px;
+        background-size: 25px;
+    }
+
+.preview-emotion {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover !important;
+    margin: 0px 4px;
+}
+
+.preview-ico {
+    border: none;
+    outline: none;
+}
+
+
+.dropdown-colorselector {
+    float: right;
+    margin-right: 5px;
+}
+
+.ep-preview p {
+    margin-right: 5px;
+    display: contents;
+}
+
+    .ep-preview p span {
+        line-height: 0px !important;
+    }
+
+
+/*.bind-line {
+    position: absolute;
+    right: 190px;
+    top: 2px;
+    min-width: 81px;
+    max-width: 82px;
+}
+
+
+.bind-emotion {
+    position: absolute;
+    right: 190px;
+    top: 2px;
+    min-width: 81px;
+    max-width: 82px;
+}
+
+.bind-color {
+    position: absolute;
+    right: 100px;
+    top: 2px;
+    min-width: 81px;
+    max-width: 82px;
+}*/
+
+.ep-input {
+    margin-top: 10px;
+}
+
+.color-trigger {
+    font-size: 12px;
+    float: left;
+    margin: 7px 0 0 10px;
+}
+
+.ep-footer {
+    color: #ffc107;
+    font-size: 12px;
+}
+
+    .ep-footer a {
+        color: red;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+/*.copier, .copier:active, .copier:focus {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 20px;
+    background: #3d5195;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none !important;
+}*/
+.copier:hover {
+    background: #333;
+    color: #dadada;
+}
+
+.c-counter, .c-info {
+    font-size: 12px;
+    float: left;
+}
+
+.c-counter {
+    margin-top: 5px;
+}
+
+.c-info {
+    color: red;
+    margin-bottom: 0px !important;
+    clear: left;
+}
+
+.ep-color-title {
+    margin-bottom: 0px !important;
+    font-size: 16px;
+}
+
+.g-emotions {
+    float: left;
+    height: auto;
+    display: block;
+}
+
+.emotion-alien {
+    background: url(../images/emotions/alien.png);
+}
+
+.emotion-angry {
+    background: url(../images/emotions/angry.png);
+}
+
+.emotion-axe {
+    background: url(../images/emotions/axe.png);
+}
+
+.emotion-axes {
+    background: url(../images/emotions/axes.png);
+}
+
+.emotion-blush {
+    background: url(../images/emotions/blush.png);
+}
+
+.emotion-bunny {
+    background: url(../images/emotions/bunny.png);
+}
+
+.emotion-butterfly {
+    background: url(../images/emotions/butterfly.png);
+}
+
+.emotion-butterflyblue {
+    background: url(../images/emotions/butterflyblue.png);
+}
+
+.emotion-cake {
+    background: url(../images/emotions/cake.png);
+}
+
+.emotion-cat {
+    background: url(../images/emotions/cat.png);
+}
+
+.emotion-catgrey {
+    background: url(../images/emotions/catgrey.png);
+}
+
+.emotion-coffee {
+    background: url(../images/emotions/coffee.png);
+}
+
+.emotion-cool {
+    background: url(../images/emotions/cool.png);
+}
+
+.emotion-crying {
+    background: url(../images/emotions/crying.png);
+}
+
+.emotion-dog {
+    background: url(../images/emotions/dog.png);
+}
+
+.emotion-donut {
+    background: url(../images/emotions/donut.png);
+}
+
+.emotion-elementdark {
+    background: url(../images/emotions/elementdark.png);
+}
+
+.emotion-elementfire {
+    background: url(../images/emotions/elementfire.png);
+}
+
+.emotion-elementholy {
+    background: url(../images/emotions/elementholy.png);
+}
+
+.emotion-elementice {
+    background: url(../images/emotions/elementice.png);
+}
+
+.emotion-elementnature {
+    background: url(../images/emotions/elementnature.png);
+}
+
+.emotion-evil {
+    background: url(../images/emotions/evil.png);
+}
+
+.emotion-fire {
+    background: url(../images/emotions/fire.png);
+}
+
+.emotion-flower {
+    background: url(../images/emotions/flower.png);
+}
+
+.emotion-fox {
+    background: url(../images/emotions/fox.png);
+}
+
+.emotion-geek {
+    background: url(../images/emotions/geek.png);
+}
+
+.emotion-ghost {
+    background: url(../images/emotions/ghost.png);
+}
+
+.emotion-grin {
+    background: url(../images/emotions/grin.png);
+}
+
+.emotion-ham {
+    background: url(../images/emotions/ham.png);
+}
+
+.emotion-hammer {
+    background: url(../images/emotions/hammer.png);
+}
+
+.emotion-hankey {
+    background: url(../images/emotions/hankey.png);
+}
+
+.emotion-heart {
+    background: url(../images/emotions/heart.png);
+}
+
+.emotion-heartblue {
+    background: url(../images/emotions/heartblue.png);
+}
+
+.emotion-heartgreen {
+    background: url(../images/emotions/heartgreen.png);
+}
+
+.emotion-heartpurple {
+    background: url(../images/emotions/heartpurple.png);
+}
+
+.emotion-heartyellow {
+    background: url(../images/emotions/heartyellow.png);
+}
+
+.emotion-helmet {
+    background: url(../images/emotions/helmet.png);
+}
+
+.emotion-horror {
+    background: url(../images/emotions/horror.png);
+}
+
+.emotion-kiss {
+    background: url(../images/emotions/kiss.png);
+}
+
+.emotion-lightning {
+    background: url(../images/emotions/lightning.png);
+}
+
+.emotion-lol {
+    background: url(../images/emotions/lol.png);
+}
+
+.emotion-love {
+    background: url(../images/emotions/love.png);
+}
+
+.emotion-mageblue {
+    background: url(../images/emotions/mageblue.png);
+}
+
+.emotion-magered {
+    background: url(../images/emotions/magered.png);
+}
+
+.emotion-monocle {
+    background: url(../images/emotions/monocle.png);
+}
+
+.emotion-palmtree {
+    background: url(../images/emotions/palmtree.png);
+}
+
+.emotion-pizza {
+    background: url(../images/emotions/pizza.png);
+}
+
+.emotion-richard {
+    background: url(../images/emotions/richard.png);
+}
+
+.emotion-rofl {
+    background: url(../images/emotions/rofl.png);
+}
+
+.emotion-rolleyes {
+    background: url(../images/emotions/rolleyes.png);
+}
+
+.emotion-sad {
+    background: url(../images/emotions/sad.png);
+}
+
+.emotion-skull {
+    background: url(../images/emotions/skull.png);
+}
+
+.emotion-smile {
+    background: url(../images/emotions/smile.png);
+}
+
+.emotion-splash {
+    background: url(../images/emotions/splash.png);
+}
+
+.emotion-staff {
+    background: url(../images/emotions/staff.png);
+}
+
+.emotion-star {
+    background: url(../images/emotions/star.png);
+}
+
+.emotion-sunflower {
+    background: url(../images/emotions/sunflower.png);
+}
+
+.emotion-sword {
+    background: url(../images/emotions/sword.png);
+}
+
+.emotion-swords {
+    background: url(../images/emotions/swords.png);
+}
+
+.emotion-teardrop {
+    background: url(../images/emotions/teardrop.png);
+}
+
+.emotion-think {
+    background: url(../images/emotions/think.png);
+}
+
+.emotion-thumbsdown {
+    background: url(../images/emotions/thumbsdown.png);
+}
+
+.emotion-thumbsup {
+    background: url(../images/emotions/thumbsup.png);
+}
+
+.emotion-tongue {
+    background: url(../images/emotions/tongue.png);
+}
+
+
+#colorSelector {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: url(../images/select.png);
+    float: left;
+}
+
+    #colorSelector div {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 30px;
+        height: 30px;
+        background: url(../images/select.png) center;
+    }
+
+#colorSelector2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background: url(../images/select2.png);
+}
+
+    #colorSelector2 div {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 28px;
+        height: 28px;
+        background: url(../images/select2.png) center;
+    }
+
+#colorpickerHolder2 {
+    top: 32px;
+    left: 0;
+    width: 356px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+    #colorpickerHolder2 .colorpicker {
+        background-image: url(../images/custom_background.png);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    #colorpickerHolder2 .colorpicker_hue div {
+        background-image: url(../images/custom_indic.gif);
+    }
+
+    #colorpickerHolder2 .colorpicker_hex {
+        background-image: url(../images/custom_hex.png);
+    }
+
+    #colorpickerHolder2 .colorpicker_rgb_r {
+        background-image: url(../images/custom_rgb_r.png);
+    }
+
+    #colorpickerHolder2 .colorpicker_rgb_g {
+        background-image: url(../images/custom_rgb_g.png);
+    }
+
+    #colorpickerHolder2 .colorpicker_rgb_b {
+        background-image: url(../images/custom_rgb_b.png);
+    }
+
+    #colorpickerHolder2 .colorpicker_hsb_s {
+        background-image: url(../images/custom_hsb_s.png);
+        display: none;
+    }
+
+    #colorpickerHolder2 .colorpicker_hsb_h {
+        background-image: url(../images/custom_hsb_h.png);
+        display: none;
+    }
+
+    #colorpickerHolder2 .colorpicker_hsb_b {
+        background-image: url(../images/custom_hsb_b.png);
+        display: none;
+    }
+
+    #colorpickerHolder2 .colorpicker_submit {
+        background-image: url(../images/custom_submit.png);
+    }
+
+    #colorpickerHolder2 .colorpicker input {
+        color: #778398;
+    }
+
+#customWidget {
+    position: relative;
+    height: 36px;
+}
+
+.tools {
+    position: relative;
+}
+
+.ep-color {
+    /*bottom: 0px !important;
+    right: 0px !important;
+    position: absolute !important;*/
+}
+
+.mt-2px {
+    margin-top: 2px;
+}
+
+.emotion-dyn-wrapper {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    padding: 10px 20px;
+    display: none;
+}
+
+.gradient-dyn-wrapper {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    padding: 10px 0px;
+    display: none;
+}
+
+.gradient-desc {
+    font-size: 12px;
+    padding: 10px;
+    color: #f6c134
+}
+
+.ep-inner-title {
+    color: #f6c134;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.ep-emotion-close, .ep-emotion-close:active, .ep-emotion-close:focus,
+.ep-gradient-close, .ep-gradient-close:active, .ep-gradient-close:focus {
+    color: #f13832;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    float: left;
+    text-decoration: none;
+}
+
+.ep-gradient-apply {
+    color: #adf132;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    float: left;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.ep-gradient-back {
+    color: #32caf1;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    float: left;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.ep-gradient-close {
+    padding: 10px;
+}
+
+.pickr {
+    position: relative;
+    overflow: visible;
+    transform: translateY(0)
+}
+
+    .pickr * {
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        -webkit-appearance: none
+    }
+
+    .pickr .pcr-button {
+        position: relative;
+        height: 2em;
+        width: 2em;
+        padding: 0.5em;
+        cursor: pointer;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;
+        border-radius: .15em;
+        background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" stroke="%2342445A" stroke-width="5px" stroke-linecap="round"><path d="M45,45L5,5"></path><path d="M45,5L5,45"></path></svg>') no-repeat center;
+        background-size: 0;
+        transition: all 0.3s
+    }
+
+        .pickr .pcr-button::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="white" d="M1,0H2V1H1V0ZM0,1H1V2H0V1Z"/><path fill="gray" d="M0,0H1V1H0V0ZM1,1H2V2H1V1Z"/></svg>');
+            background-size: .5em;
+            border-radius: .15em;
+            z-index: -1
+        }
+
+        .pickr .pcr-button::before {
+            z-index: initial
+        }
+
+        .pickr .pcr-button::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transition: background 0.3s;
+            background: currentColor;
+            border-radius: .15em
+        }
+
+        .pickr .pcr-button.clear {
+            background-size: 70%
+        }
+
+            .pickr .pcr-button.clear::before {
+                opacity: 0
+            }
+
+            .pickr .pcr-button.clear:focus {
+                box-shadow: 0 0 0 1px rgba(255,255,255,0.85),0 0 0 3px currentColor
+            }
+
+        .pickr .pcr-button.disabled {
+            cursor: not-allowed
+        }
+
+    .pickr *, .pcr-app * {
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        -webkit-appearance: none
+    }
+
+    .pickr input:focus, .pickr input.pcr-active, .pickr button:focus, .pickr button.pcr-active, .pcr-app input:focus, .pcr-app input.pcr-active, .pcr-app button:focus, .pcr-app button.pcr-active {
+        box-shadow: 0 0 0 1px rgba(255,255,255,0.85),0 0 0 3px currentColor
+    }
+
+    .pickr .pcr-palette, .pickr .pcr-slider, .pcr-app .pcr-palette, .pcr-app .pcr-slider {
+        transition: box-shadow 0.3s
+    }
+
+        .pickr .pcr-palette:focus, .pickr .pcr-slider:focus, .pcr-app .pcr-palette:focus, .pcr-app .pcr-slider:focus {
+            box-shadow: 0 0 0 1px rgba(255,255,255,0.85),0 0 0 3px rgba(0,0,0,0.25)
+        }
+
+.pcr-app {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+    border-radius: 0.1em;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s 0.3s;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;
+    box-shadow: 0 0.15em 1.5em 0 rgba(0,0,0,0.1),0 0 1em 0 rgba(0,0,0,0.03);
+    left: 0;
+    top: 0
+}
+
+    .pcr-app.visible {
+        transition: opacity 0.3s;
+        visibility: visible;
+        opacity: 1
+    }
+
+    .pcr-app .pcr-swatches {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.75em
+    }
+
+        .pcr-app .pcr-swatches.pcr-last {
+            margin: 0
+        }
+
+@supports (display: grid) {
+    .pcr-app .pcr-swatches {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, 1.75em)
+    }
+}
+
+.pcr-app .pcr-swatches > button {
+    font-size: 1em;
+    position: relative;
+    width: calc(1.75em - 5px);
+    height: calc(1.75em - 5px);
+    border-radius: 0.15em;
+    cursor: pointer;
+    margin: 2.5px;
+    flex-shrink: 0;
+    justify-self: center;
+    transition: all 0.15s;
+    overflow: hidden;
+    background: transparent;
+    z-index: 1
+}
+
+    .pcr-app .pcr-swatches > button::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="white" d="M1,0H2V1H1V0ZM0,1H1V2H0V1Z"/><path fill="gray" d="M0,0H1V1H0V0ZM1,1H2V2H1V1Z"/></svg>');
+        background-size: 6px;
+        border-radius: .15em;
+        z-index: -1
+    }
+
+    .pcr-app .pcr-swatches > button::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: currentColor;
+        border: 1px solid rgba(0,0,0,0.05);
+        border-radius: 0.15em;
+        box-sizing: border-box
+    }
+
+    .pcr-app .pcr-swatches > button:hover {
+        filter: brightness(1.05)
+    }
+
+.pcr-app .pcr-interaction {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -0.2em 0 -0.2em
+}
+
+    .pcr-app .pcr-interaction > * {
+        margin: 0 0.2em
+    }
+
+    .pcr-app .pcr-interaction input {
+        letter-spacing: 0.07em;
+        font-size: 0.75em;
+        text-align: center;
+        cursor: pointer;
+        color: #75797e;
+        background: #f1f3f4;
+        border-radius: .15em;
+        transition: all 0.15s;
+        padding: 0.45em 0.5em;
+        margin-top: 0.75em
+    }
+
+        .pcr-app .pcr-interaction input:hover {
+            filter: brightness(0.975)
+        }
+
+        .pcr-app .pcr-interaction input:focus {
+            box-shadow: 0 0 0 1px rgba(255,255,255,0.85),0 0 0 3px rgba(66,133,244,0.75)
+        }
+
+    .pcr-app .pcr-interaction .pcr-result {
+        color: #75797e;
+        text-align: left;
+        flex: 1 1 8em;
+        min-width: 8em;
+        transition: all 0.2s;
+        border-radius: .15em;
+        background: #f1f3f4;
+        cursor: text
+    }
+
+        .pcr-app .pcr-interaction .pcr-result::selection {
+            background: #4285f4;
+            color: #fff
+        }
+
+    .pcr-app .pcr-interaction .pcr-type.active {
+        color: #fff;
+        background: #4285f4
+    }
+
+    .pcr-app .pcr-interaction .pcr-save, .pcr-app .pcr-interaction .pcr-cancel, .pcr-app .pcr-interaction .pcr-clear {
+        color: #fff;
+        width: auto
+    }
+
+    .pcr-app .pcr-interaction .pcr-save, .pcr-app .pcr-interaction .pcr-cancel, .pcr-app .pcr-interaction .pcr-clear {
+        color: #fff
+    }
+
+        .pcr-app .pcr-interaction .pcr-save:hover, .pcr-app .pcr-interaction .pcr-cancel:hover, .pcr-app .pcr-interaction .pcr-clear:hover {
+            filter: brightness(0.925)
+        }
+
+    .pcr-app .pcr-interaction .pcr-save {
+        background: #4285f4
+    }
+
+    .pcr-app .pcr-interaction .pcr-clear, .pcr-app .pcr-interaction .pcr-cancel {
+        background: #f44250
+    }
+
+        .pcr-app .pcr-interaction .pcr-clear:focus, .pcr-app .pcr-interaction .pcr-cancel:focus {
+            box-shadow: 0 0 0 1px rgba(255,255,255,0.85),0 0 0 3px rgba(244,66,80,0.75)
+        }
+
+.pcr-app .pcr-selection .pcr-picker {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    user-select: none
+}
+
+.pcr-app .pcr-selection .pcr-color-palette, .pcr-app .pcr-selection .pcr-color-chooser, .pcr-app .pcr-selection .pcr-color-opacity {
+    position: relative;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab
+}
+
+    .pcr-app .pcr-selection .pcr-color-palette:active, .pcr-app .pcr-selection .pcr-color-chooser:active, .pcr-app .pcr-selection .pcr-color-opacity:active {
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing
+    }
+
+.pcr-app[data-theme='nano'] {
+    width: 14.25em;
+    max-width: 95vw
+}
+
+    .pcr-app[data-theme='nano'] .pcr-swatches {
+        margin-top: .6em;
+        padding: 0 .6em
+    }
+
+    .pcr-app[data-theme='nano'] .pcr-interaction {
+        padding: 0 .6em .6em .6em
+    }
+
+    .pcr-app[data-theme='nano'] .pcr-selection {
+        display: grid;
+        grid-gap: .6em;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 5fr auto auto;
+        align-items: center;
+        height: 10.5em;
+        width: 100%;
+        align-self: flex-start
+    }
+
+        .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-preview {
+            grid-area: 2 / 1 / 4 / 1;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: .6em
+        }
+
+            .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-preview .pcr-last-color {
+                display: none
+            }
+
+            .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-preview .pcr-current-color {
+                position: relative;
+                background: currentColor;
+                width: 2em;
+                height: 2em;
+                border-radius: 50em;
+                overflow: hidden
+            }
+
+                .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-preview .pcr-current-color::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="white" d="M1,0H2V1H1V0ZM0,1H1V2H0V1Z"/><path fill="gray" d="M0,0H1V1H0V0ZM1,1H2V2H1V1Z"/></svg>');
+                    background-size: .5em;
+                    border-radius: .15em;
+                    z-index: -1
+                }
+
+        .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-palette {
+            grid-area: 1 / 1 / 2 / 3;
+            width: 100%;
+            height: 100%;
+            z-index: 1
+        }
+
+            .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-palette .pcr-palette {
+                border-radius: .15em;
+                width: 100%;
+                height: 100%
+            }
+
+                .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-palette .pcr-palette::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="white" d="M1,0H2V1H1V0ZM0,1H1V2H0V1Z"/><path fill="gray" d="M0,0H1V1H0V0ZM1,1H2V2H1V1Z"/></svg>');
+                    background-size: .5em;
+                    border-radius: .15em;
+                    z-index: -1
+                }
+
+        .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-chooser {
+            grid-area: 2 / 2 / 2 / 2
+        }
+
+        .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-opacity {
+            grid-area: 3 / 2 / 3 / 2
+        }
+
+        .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-chooser, .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-opacity {
+            height: 0.5em;
+            margin: 0 .6em
+        }
+
+            .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-chooser .pcr-picker, .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-opacity .pcr-picker {
+                top: 50%;
+                transform: translateY(-50%)
+            }
+
+            .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-chooser .pcr-slider, .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-opacity .pcr-slider {
+                flex-grow: 1;
+                border-radius: 50em
+            }
+
+            .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-chooser .pcr-slider {
+                background: linear-gradient(to right, red, #ff0, lime, cyan, blue, #f0f, red)
+            }
+
+            .pcr-app[data-theme='nano'] .pcr-selection .pcr-color-opacity .pcr-slider {
+                background: linear-gradient(to right, transparent, black),url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="white" d="M1,0H2V1H1V0ZM0,1H1V2H0V1Z"/><path fill="gray" d="M0,0H1V1H0V0ZM1,1H2V2H1V1Z"/></svg>');
+                background-size: 100%, 0.25em
+            }
+
+.pcr-app.pcr-app {
+    box-shadow: none
+}
+
+    .pcr-app.pcr-app .pcr-selection .pcr-picker {
+        height: 18px;
+        width: 18px
+    }
+
+    .pcr-app.pcr-app .pcr-selection .pcr-color-preview {
+        margin-left: 0
+    }
+
+        .pcr-app.pcr-app .pcr-selection .pcr-color-preview .pcr-current-color {
+            border-radius: 0.15em;
+            width: 100%
+        }
+
+    .pcr-app.pcr-app .pcr-selection .pcr-color-chooser, .pcr-app.pcr-app .pcr-selection .pcr-color-opacity {
+        margin-left: 0
+    }
+
+    .pcr-app.pcr-app .pcr-interaction {
+        padding: 0;
+        margin-bottom: 0
+    }
+
+.gpickr {
+    flex-direction: row;
+    display: inline-flex;
+    box-shadow: 0 0.15em 1.5em 0 rgba(0,0,0,0.1),0 0 1em 0 rgba(0,0,0,0.03);
+    border-radius: 0.15em;
+    overflow: hidden;
+    padding: 0.5em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;
+    user-select: none;
+    max-width: 100vw
+}
+
+    .gpickr * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0
+    }
+
+    .gpickr button {
+        border: none;
+        outline: none;
+        background: initial;
+        cursor: pointer
+    }
+
+    .gpickr .gpcr-interaction {
+        flex-direction: column;
+        display: flex;
+        margin-left: 0.5em;
+        width: 12.5em;
+        z-index: 1
+    }
+
+        .gpickr .gpcr-interaction .gpcr-result {
+            height: 7.9em;
+            width: 100%;
+            position: relative;
+            border-radius: 0.15em;
+            margin-bottom: 0.5em;
+            flex-grow: 1
+        }
+
+            .gpickr .gpcr-interaction .gpcr-result::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="white" d="M1,0H2V1H1V0ZM0,1H1V2H0V1Z"/><path fill="gray" d="M0,0H1V1H0V0ZM1,1H2V2H1V1Z"/></svg>');
+                background-size: 8px;
+                border-radius: .15em;
+                z-index: -1
+            }
+
+            .gpickr .gpcr-interaction .gpcr-result .gpcr-pos, .gpickr .gpcr-interaction .gpcr-result .gpcr-angle {
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transition: all 0.3s;
+                position: absolute;
+                margin: auto;
+                opacity: 0.25
+            }
+
+            .gpickr .gpcr-interaction .gpcr-result .gpcr-angle {
+                height: .35em;
+                width: .35em;
+                background: white;
+                border-radius: 100%
+            }
+
+                .gpickr .gpcr-interaction .gpcr-result .gpcr-angle > div {
+                    height: 2px;
+                    width: 2em;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 50%;
+                    position: absolute;
+                    background: white;
+                    border-radius: 1em;
+                    margin: auto 0;
+                    transform-origin: left
+                }
+
+                .gpickr .gpcr-interaction .gpcr-result .gpcr-angle.gpcr-active {
+                    opacity: 1
+                }
+
+            .gpickr .gpcr-interaction .gpcr-result .gpcr-pos {
+                height: 5em;
+                width: 5em;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                opacity: 1
+            }
+
+                .gpickr .gpcr-interaction .gpcr-result .gpcr-pos > div {
+                    height: 15px;
+                    width: 15px;
+                    border: 2px solid transparent;
+                    position: relative;
+                    margin: auto;
+                    transition: all 0.3s
+                }
+
+                    .gpickr .gpcr-interaction .gpcr-result .gpcr-pos > div:not(.gpcr-active) {
+                        cursor: pointer
+                    }
+
+                    .gpickr .gpcr-interaction .gpcr-result .gpcr-pos > div::before {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        height: 5px;
+                        width: 5px;
+                        border-radius: 100%;
+                        background: white;
+                        transition: all 0.3s;
+                        opacity: 0.25;
+                        margin: auto
+                    }
+
+                    .gpickr .gpcr-interaction .gpcr-result .gpcr-pos > div:hover::before {
+                        opacity: 1
+                    }
+
+                    .gpickr .gpcr-interaction .gpcr-result .gpcr-pos > div.gpcr-active {
+                        border-color: white;
+                        border-radius: 100%
+                    }
+
+                        .gpickr .gpcr-interaction .gpcr-result .gpcr-pos > div.gpcr-active::before {
+                            opacity: 1
+                        }
+
+            .gpickr .gpcr-interaction .gpcr-result:hover .gpcr-angle {
+                opacity: 1
+            }
+
+        .gpickr .gpcr-interaction .gpcr-mode {
+            height: 1.5em;
+            width: 1.5em;
+            position: relative;
+            top: 0.15em;
+            left: 0.15em;
+            border: 2px solid white;
+            border-radius: 0.15em;
+            cursor: pointer;
+            opacity: 0.25;
+            transition: all 0.3s
+        }
+
+            .gpickr .gpcr-interaction .gpcr-mode::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                transition: all 0.3s
+            }
+
+            .gpickr .gpcr-interaction .gpcr-mode[data-mode=linear]::before {
+                height: 2px;
+                width: 70%;
+                background: white;
+                transform: rotate(45deg);
+                border-radius: 50em
+            }
+
+            .gpickr .gpcr-interaction .gpcr-mode[data-mode=radial]::before {
+                height: 50%;
+                width: 50%;
+                border-radius: 100%;
+                border: 2px solid white
+            }
+
+            .gpickr .gpcr-interaction .gpcr-mode[data-mode=conic]::before {
+                height: 0;
+                width: 0;
+                border: 5px solid transparent;
+                border-color: white white transparent transparent
+            }
+
+            .gpickr .gpcr-interaction .gpcr-mode:hover {
+                opacity: 1
+            }
+
+    .gpickr .gpcr-stops {
+        margin-bottom: 0.75em
+    }
+
+        .gpickr .gpcr-stops .gpcr-stop-preview {
+            height: 2em;
+            width: 100%;
+            position: relative;
+            border-radius: 0.15em;
+            overflow: hidden;
+            cursor: pointer
+        }
+
+            .gpickr .gpcr-stops .gpcr-stop-preview::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="white" d="M1,0H2V1H1V0ZM0,1H1V2H0V1Z"/><path fill="gray" d="M0,0H1V1H0V0ZM1,1H2V2H1V1Z"/></svg>');
+                background-size: 8px;
+                border-radius: .15em;
+                z-index: -1
+            }
+
+        .gpickr .gpcr-stops .gpcr-stop-marker {
+            position: relative;
+            z-index: 1
+        }
+
+            .gpickr .gpcr-stops .gpcr-stop-marker .gpcr-marker {
+                height: 12px;
+                width: 12px;
+                position: absolute;
+                background: currentColor;
+                margin: 0.15em 0 0 -5px;
+                border-radius: 100%;
+                border: 2px solid white;
+                box-shadow: 0 0.05em 0.2em rgba(0,0,0,0.15);
+                transition: opacity 0.15s;
+                cursor: grab;
+                cursor: webkit-grab
+            }
+
+                .gpickr .gpcr-stops .gpcr-stop-marker .gpcr-marker::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2"><path fill="white" d="M1,0H2V1H1V0ZM0,1H1V2H0V1Z"/><path fill="gray" d="M0,0H1V1H0V0ZM1,1H2V2H1V1Z"/></svg>');
+                    background-size: 4px;
+                    border-radius: .15em;
+                    z-index: -1
+                }
+
+                .gpickr .gpcr-stops .gpcr-stop-marker .gpcr-marker::before {
+                    border-radius: 100%
+                }
